@@ -3,6 +3,9 @@
 // import 'firebase/firestore';
 
 //https://firebase.google.com/docs/web/modular-upgrade
+
+// trying to set firebase config to env -> https://linguinecode.com/post/how-to-add-environment-variables-to-your-svelte-js-app
+    // this looks better -> https://medium.com/dev-cafe/how-to-setup-env-variables-to-your-svelte-js-app-c1579430f032
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';

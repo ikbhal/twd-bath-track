@@ -2,6 +2,7 @@
 import {onMount} from 'svelte';
 //https://svelte.dev/tutorial/writable-stores
 import {writable} from 'svelte/store';
+// import EnvTest from './EnvTest.svelte';
 
 import {db} from './firebase';
 let todayDateString = new Date().toISOString().slice(0,10);
@@ -62,6 +63,7 @@ function deleteBath(id){
 </script>
 
 <main>
+	<!-- <EnvTest></EnvTest> -->
 <h1>Towheed Bath Accountability</h1>
 <p>1. add bath, 2.list bath</p>
 

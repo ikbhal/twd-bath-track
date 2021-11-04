@@ -1,3 +1,6 @@
+// import {config} from 'dotenv';
+// import replace from '@rollup/plugin-replace';
+
 import svelte from 'rollup-plugin-svelte';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
@@ -27,7 +30,6 @@ function serve() {
 		}
 	};
 }
-
 export default {
 	input: 'src/main.js',
 	output: {
@@ -37,6 +39,15 @@ export default {
 		file: 'public/build/bundle.js'
 	},
 	plugins: [
+		// replace({
+      	// 	// stringify the object       
+      	// 	__myapp: JSON.stringify({
+        // 		env: {
+        //   			isProd: production,
+        //   			...config().parsed // attached the .env config
+        // 		}
+		// 	}),
+    	// }),
 		svelte({
 			compilerOptions: {
 				// enable run-time checks when not in production
