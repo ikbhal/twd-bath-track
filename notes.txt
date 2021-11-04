@@ -1,0 +1,5 @@
+Functionalities
+
+1) add bath (date, takenBath(false or true))
+2) list bath 
+3) delete bath 
